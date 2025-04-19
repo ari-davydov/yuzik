@@ -4,18 +4,52 @@
   <meta charset="UTF-8">
   <title>Plov Gallery</title>
   <style>
-    body { font-family: sans-serif; max-width: 1000px; margin: auto; padding: 20px; background: #fffdf0; }
-    nav a { margin-right: 15px; font-weight: bold; color: darkred; text-decoration: none; }
-    h1 { color: darkgoldenrod; }
+    body {
+      font-family: sans-serif;
+      max-width: 1000px;
+      margin: auto;
+      padding: 20px;
+      background: #fffdf0;
+    }
+
+    nav a {
+      margin-right: 15px;
+      font-weight: bold;
+      color: darkred;
+      text-decoration: none;
+    }
+
+    h1 {
+      color: darkgoldenrod;
+    }
+
     .grid {
       display: grid;
       grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
       gap: 20px;
+      margin-top: 30px;
     }
+
     .grid img {
       width: 100%;
       border-radius: 8px;
       box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+    }
+
+    .upload-button {
+      display: inline-block;
+      background-color: darkred;
+      color: white;
+      font-weight: bold;
+      padding: 10px 20px;
+      border-radius: 5px;
+      text-decoration: none;
+      margin-top: 10px;
+      transition: background-color 0.2s ease;
+    }
+
+    .upload-button:hover {
+      background-color: firebrick;
     }
   </style>
 </head>
@@ -27,12 +61,15 @@
     <a href="gallery.html">Gallery</a>
   </nav>
 
-  <p>Upload your plov to the gallery (in progress).</p>
+  <a class="upload-button" href="https://docs.google.com/forms/d/e/1FAIpQLScEKJSRnSJwdFBw_RdIkphw6c28O6rpCOpBnKmeoICTD5T_UA/viewform?usp=dialog" target="_blank">
+    Submit Your Plov
+  </a>
 
   <div class="grid">
     <img src="assets/images/plov1.png" alt="Mama (Ilona) Plov">
-    <!-- Add more as needed -->
+    <img src="assets/images/plov2.jpg" alt="Plov with lamb">
+    <img src="assets/images/plov3.jpg" alt="Golden crust">
+    <!-- Add more plov photos here -->
   </div>
-
 </body>
 </html>
