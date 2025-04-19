@@ -2,6 +2,8 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
   <title>Plov Gallery</title>
   <style>
     body {
@@ -51,6 +53,18 @@
     .upload-button:hover {
       background-color: firebrick;
     }
+
+    .upload-button:active {
+      background-color: #b22222;
+    }
+
+    figcaption {
+      text-align: center;
+      font-size: 0.95em;
+      margin-top: 8px;
+      color: #555;
+    }
+
   </style>
 </head>
 <body>
@@ -66,9 +80,11 @@
   </a>
 
   <div class="grid">
-    <img src="assets/images/plov1.png" alt="Mama (Ilona) Plov">
-    <!-- Add more plov photos here -->
+    <figure>
+      <img src="assets/images/plov1.png" alt="Mama (Ilona) Plov">
+      <figcaption>Mama (Ilona) — April 2024</figcaption>
+    </figure>
   </div>
-  
+
 </body>
 </html>
